@@ -1,0 +1,168 @@
+body{
+    min-height: 800px;
+    
+    background: linear-gradient(43deg, rgba(255,24,24,1) 0%, rgba(158,136,10,1) 25%, rgba(0,212,255,1) 100%);
+  }
+  
+  h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(48, 47, 47);
+    text-align: center;
+    font-size: 2.5rem;
+    border-top: 10px;
+    border-bottom: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(93, 210, 233, 0.532);
+  }
+
+  table#info-table{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(54, 58, 61);
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+
+  table#info-table th{
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-weight: bold;
+    color: rgb(54, 58, 61);
+    /* height: 1.5rem; */
+    text-transform: uppercase;
+    /* border: solid 1px aliceblue; */
+    /* padding: 10px; */
+    min-width: 200px;
+
+    font-size: 1rem;
+    
+  }
+  
+  table#info-table td{
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  button.start-button{
+    background-color: rgb(166, 139, 66);
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1rem;
+    padding-block: 10.5px;
+    border-radius: 3px;
+    width: 300px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
+  button:hover{
+    background-color: rgb(168, 155, 117);
+  }
+  .restart-button{
+    background-color: rgb(166, 94, 66);
+  }
+
+  div#back-table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 450px;
+    height: 425px;
+  }
+
+  table#table-board{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(54, 58, 61);
+    border: 5px aliceblue;
+    padding: 14px;
+  }
+
+  #table-board td{
+    padding: 20px;
+    box-shadow: rgb(132 132 132 / 0.35) 1px 1px 4px 1px;
+    border: 3px aliceblue;
+    border-radius: 6px;
+    justify-content: center;
+  }
+
+    #input-div {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    input#text-input{
+    /* background-color: rgb(71, 188, 223); */
+    color: rgb(42, 40, 40);
+    font-weight: bold;
+    border: none;
+    font-size: 1.8rem;
+    padding-block: 10.5px;
+    border-radius: 3px;
+    width: 450px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+    button#submit-button{
+        background-color: rgb(71, 188, 223);
+        color: white;
+        font-weight: bold;
+        border: none;
+        font-size: 1rem;
+        padding-block: 10.5px;
+        border-radius: 3px;
+        width: 300px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 15px;
+      }
+ 
+    div#div-pop-message{
+        font-family: 'Josefin Sans', sans-serif;
+        background-color: rgba(255, 255, 255, 0.6);
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-align: center;
+        top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 220px;
+        right: 0px;
+        width: 200px;
+        height: 100px;  
+    }
+
+
+  
+ 
+  
+
+  
+
+  
+
+  

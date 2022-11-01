@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <h1>Boggle Game</h1>
+        <div id="board-div" ></div>        
+            <table id="info-table">
+                <tr>
+                    <th>Time</th>
+                    <th>Current score</th>
+                    <th>Highest Score</th>
+                    <th>Amount of times played</th>
+                </tr>
+                <tr>
+                    <td id="timer"">01:00</td>
+                    <td id="score-board">0</td>
+                    <td id="highest-score"></td>
+                    <td id="times-played"></td>
+                </tr>
+            </table>    
+        </div>
+        <button id="start-button" class="start-button">Start new game!</button>
+        <div id="back-table">
+            <table id="table-board" style="visibility:hidden;">
+                <tbody>
+                {% set html_board = session["board"]%}
+                {% for tr in html_board %}
+                    <tr>
+                        {% set x = html_board.index(tr) %}
+                        {% for td in tr%}
+                            {% set y = tr.index(td) %}
+                            <td id={{x}}-{{y}}>{{td}}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div id="input-div">
+            <form action="/" type="post" id="boggle-form" style="visibility:hidden;" >
+                <input type="text" name="guess" id="text-input" autocomplete="off" placeholder="submit your guess in here">
+                <button id="submit-button">submit!</button>
+            </form>
+        </div>
+        <div id="div-pop-message" >
+            <h2 id="pop-message"></h2>
+        </div>
+</div>
+{% endblock %}

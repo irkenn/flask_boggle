@@ -14,7 +14,7 @@ class Boggle():
         """Read and return all words in dictionary. Get rid of the spaces before and after string"""
 
         dict_file = open(dict_path)
-        words = [w.strip() for w in dict_file]
+        words = [w.strip().upper() for w in dict_file]
         dict_file.close()
         return words
 
@@ -34,7 +34,7 @@ class Boggle():
 
         word_exists = word in self.words
         valid_word = self.find(board, word.upper())
-
+    
         if word_exists and valid_word:
             result = "ok"
         elif word_exists and not valid_word:
